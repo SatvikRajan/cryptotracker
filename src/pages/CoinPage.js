@@ -23,7 +23,7 @@ export default function CoinPage() {
   if(!coin) return <LinearProgress style={{backgroundColor: 'gold'}}/>
   return (
     <div className='container'>
-      <div className='sidebar' style={{borderRight: "2px solid grey"}}>
+      <div className='sidebar'>
       <img
           src={coin?.image.large}
           alt={coin?.name}
@@ -51,15 +51,14 @@ export default function CoinPage() {
         </Typography>
         <div className='marketData'>
           <span style={{ display: "flex" }}>
-            <Typography variant="h5" style={{
-              fontSize: '1.3rem',
+            <Typography variant="h6" style={{
               fontWeight: "bold",
               marginBottom: 20,
               fontFamily: "Montserrat",
             }}>
               Rank:
             </Typography>
-            &nbsp; &nbsp;
+            &nbsp;
             <Typography
               variant="h6"
               style={{
@@ -71,15 +70,14 @@ export default function CoinPage() {
           </span>
 
           <span style={{ display: "flex" }}>
-            <Typography variant="h5" style={{
-              fontSize: '1.3rem',
+            <Typography variant="h6" style={{
               fontWeight: "bold",
               marginBottom: 20,
               fontFamily: "Montserrat",
             }}>
               Current Price:
             </Typography>
-            &nbsp; &nbsp;
+            &nbsp;
             <Typography
               variant="h6"
               style={{
@@ -93,15 +91,14 @@ export default function CoinPage() {
             </Typography>
           </span>
           <span style={{ display: "flex" }}>
-            <Typography variant="h5" style={{
-              fontSize: '1.3rem',
+            <Typography variant="h6" style={{
               fontWeight: "bold",
               marginBottom: 20,
               fontFamily: "Montserrat",
             }}>
               Market Cap:
             </Typography>
-            &nbsp; &nbsp;
+            &nbsp;
             <Typography
               variant="h6"
               style={{
