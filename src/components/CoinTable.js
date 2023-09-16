@@ -12,7 +12,7 @@ export default function CoinTable() {
     const navigate = useNavigate()
     const [coins, setCoins] = useState([])
     const [loading, setLoading] = useState(false)
-    const [search, setSearch] = useState()
+    const [search, setSearch] = useState("")
     const [page, setPage] = useState(1);
     const { currency, symbol } = CryptoState()
     const fetchCoins = async () => {
